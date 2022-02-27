@@ -83,7 +83,7 @@ div.container-modal .modal-screen{
     margin-top: 10px;
 }
 
-#form-publiq .ctn-button button{
+#form-publiq .ctn-button input#publicar{
     width: 100%;
     padding: 13px 0px;
     background-color: rgb(226, 10, 100);
