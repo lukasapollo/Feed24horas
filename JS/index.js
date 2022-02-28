@@ -1,4 +1,4 @@
-// Função responsavel de coletar os dados e realizar a publição
+/* // Função responsavel de coletar os dados e realizar a publição
 document.querySelector('#publicar').addEventListener('click', (event) => {
     event.preventDefault();
     // Coleta os dados e retorna um Objeto com os dados.
@@ -45,4 +45,4 @@ document.querySelector('#publicar').addEventListener('click', (event) => {
 
     incertedBody(dataCollection())
 
-})
+}) */

@@ -1,6 +1,10 @@
 <?php
+
+if (isset($_GET['publicar'])) {
+   storage_db();
+}
     
-      //conectando ao banco de dados
+   //conectando ao banco de dados
    function connect_db(){
 
       //Dados do banco de dados
@@ -18,11 +22,6 @@
      }
      return $conn;
    }
-
-   if (isset($_GET['publicar'])) {
-      storage_db();
-   }
-
    
    function storage_db(){
 
@@ -63,7 +62,7 @@
              </div>
          </div>
          <div class='ctn-btn'>
-             <a href='https://api.whatsapp.com/send?phone=$line[contact]&text=$line[message]'>
+             <a href='https://wa.me/$line[contact]?text=Eu%20tenho%20interesse%20na%20sua%20tarefa!'>
                  <span>Tenho interesse</span>
                  <span class='material-icons-outlined'>arrow_forward</span>
              </a>
@@ -73,5 +72,3 @@
       }
       
    }
-
-?>
