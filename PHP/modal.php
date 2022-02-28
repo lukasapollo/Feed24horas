@@ -1,6 +1,6 @@
 <?php
 
-if (isset($_GET['publicar'])) {
+if (isset($_GET['publish'])) {
    storage_db();
 }
     
@@ -35,7 +35,7 @@ if (isset($_GET['publicar'])) {
          ) ";
 
       if (mysqli_query(connect_db(), $query)) {
-         echo "Publicação armazenada co sucesso <br>";
+         echo "Publicação armazenada com sucesso <br>";
       } else {
       echo "Error: " . $query . "\n" . mysqli_error(connect_db());
       }

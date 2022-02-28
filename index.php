@@ -51,7 +51,7 @@
                         </div>
 
                         <div class="ctn-button">
-                            <input id="publicar" type="submit" value="Publicar">
+                            <input name="publish" id="publicar" type="submit" value="Publicar">
                         </div>
                     </div>
                 </form>
@@ -75,6 +75,7 @@
             </div>
         </div>
     </section>
+    
     <!-- Feed de Publicações -->
     <main id="container-main">
         <div class="title-public">Publicações</div>
