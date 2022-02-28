@@ -27,11 +27,11 @@
             </div>
             <div>
                 
-                <form method="get" action="PHP/modal.php" id="form-publiq">
+                <form method="post" action="PHP/modal.php" id="form-publiq">
                     <div class="container-ipt">
                         <label for="">Whatsapp</label>
                         <div class="input-group1">
-                            <input class="ipt-1 ipts" type="text" name="prefix" value="+55" placeholder="+55">
+                            <input class="ipt-1 ipts" type="text" name="prefix" value="55" placeholder="+55">
                             <input class="ipt-2" type="text" name="contact" placeholder="(99) 9999-9999" value="">
                         </div>
 
@@ -110,7 +110,7 @@
     </main>
 
     <script src="./JS/modalController.js"></script>
-    <script src="./JS/index.js"></script>
+    <!-- <script src="./JS/index.js"></script> -->
 </body>
 
 </html>

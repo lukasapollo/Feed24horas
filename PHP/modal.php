@@ -1,6 +1,6 @@
 <?php
 
-if (isset($_GET['publish'])) {
+if (isset($_POST['publish'])) {
    storage_db();
 }
     
@@ -25,17 +25,17 @@ if (isset($_GET['publish'])) {
    
    function storage_db(){
 
-      $contact = $_GET['contact'];
-      $message = $_GET['message'];
-      $task = $_GET['task'];
-      $reward = $_GET['reward'];
+      $contact = $_POST['prefix'] . $_POST['contact'];
+      $message = $_POST['message'];
+      $task = $_POST['task'];
+      $reward = $_POST['reward'];
 
       $query = "INSERT INTO heroku_ad279c73e8320b2.`feed24horas` (`contact`, `message`, `task`, `reward`) VALUES (
          '$contact', '$message', '$task', '$reward'
          ) ";
 
       if (mysqli_query(connect_db(), $query)) {
-         echo "Publicação armazenada com sucesso <br>";
+         //echo "Publicação armazenada com sucesso <br>";
       } else {
       echo "Error: " . $query . "\n" . mysqli_error(connect_db());
       }
