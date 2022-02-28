@@ -40,6 +40,8 @@ if (isset($_POST['publish'])) {
       echo "Error: " . $query . "\n" . mysqli_error(connect_db());
       }
 
+      /* Definir como o formulário irá se comportar */
+
    }
    
    function consult_db(){
