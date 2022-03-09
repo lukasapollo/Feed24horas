@@ -8,4 +8,4 @@
 <br>
 
 ### Autores <br>
-<img src="https://github.com/lukasapollo.png" width=115><br><sub>Weverton Campos</sub>
+<img src="https://github.com/lukasapollo.png" width=115><br><sub>lukasapollo</sub>
